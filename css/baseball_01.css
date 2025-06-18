@@ -1,3 +1,26 @@
 table{
     border: solid 1px #000;
 }
+
+th{
+    width: 150px;
+    height: 150px;
+    border: solid 1px #000;
+}
+
+td{
+    width: 75px;
+    border: solid 1px #000;
+}
+
+.high{
+    background-color: tomato;
+}
+
+.middle{
+    background-color: #00B16B;
+}
+
+.low{
+    background-color: #0067C0;
+}
