@@ -4,7 +4,9 @@ const middleBtn = document.querySelector("#middleBtn");
 const lowBtn = document.querySelector("#lowBtn");
 
 let opponentRandom = Math.floor(Math.random()*3);
+let randomA = Math.floor(Math.random()*11);
 let opponentCourse = [];
+
 
 
 // 0を高め、1を真ん中、2を低めとする
@@ -23,6 +25,8 @@ highBtn.addEventListener("click",()=>{
     if (opponentCourse === "高め") {
         console.log("hit");
     }else{
-        console.log("ストライク");
+        if (randomA <= 3) {
+            
+        }
     }
 })
