@@ -37,62 +37,14 @@ highBtn.addEventListener("click",()=>{
         }else if (randomA <=10) {
             console.log("アウト");
         }
-        }else if (randomA <= 3) {
+        }else{
+            if(randomA <= 3) {
             console.log("ストライク");
         }else if (randomA <= 6) {
             console.log("アウト");
         }else if (randomA <=9) {
             console.log("ボール");
-        }else if (randomA <=10) {
+        }else{
             console.log("アウト");
         }
-        else if (opponentCourse === "真ん中") {
-            if (randomA <= 3) {
-                console.log("ボール");
-            }else if (randomA <= 6) {
-                console.log("ボール");
-            }else if (randomA <=7) {
-                console.log("ホームラン");
-            }else if (randomA <= 9) {
-                console.log("ヒット");
-            }else if (randomA <=10) {
-                console.log("アウト");
-            }
-        }else{
-            if (randomA <= 3) {
-                console.log("ストライク");
-            }else if (randomA <= 6) {
-                console.log("アウト");
-            }else if (randomA <=9) {
-                console.log("ボール");
-            }else if (randomA <=10) {
-                console.log("アウト");
-            }
-        }
-        
-        
-        if (opponentCourse === "低め") {
-            if (randomA <= 3) {
-                console.log("ボール");
-            }else if (randomA <= 6) {
-                console.log("ボール");
-            }else if (randomA <=7) {
-                console.log("ホームラン");
-            }else if (randomA <= 9) {
-                console.log("ヒット");
-            }else if (randomA <=10) {
-                console.log("アウト");
-            }
-        }else{
-            if (randomA <= 3) {
-                console.log("ストライク");
-            }else if (randomA <= 6) {
-                console.log("アウト");
-            }else if (randomA <=9) {
-                console.log("ボール");
-            }else if (randomA <=10) {
-                console.log("アウト");
-            }
-        }
-})
-    
+    }
