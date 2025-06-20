@@ -43,8 +43,9 @@ highBtn.addEventListener("click",()=>{
         }else if (randomA <= 6) {
             console.log("アウト");
         }else if (randomA <=9) {
-            console.log("ボール");
+            console.log("ストライク");
         }else{
-            console.log("アウト");
+            console.log("ボール");
         }
     }
+})
