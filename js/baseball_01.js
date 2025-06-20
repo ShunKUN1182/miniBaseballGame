@@ -71,23 +71,23 @@ middleBtn.addEventListener("click",()=>{
         if (randomA <= 3) {
             console.log("ボール");
         }else if (randomA <= 6) {
-            console.log("ボール");
+            console.log("アウト");
         }else if (randomA <=7) {
             console.log("ホームラン");
         }else if (randomA <= 9) {
             console.log("ヒット");
         }else if (randomA <=10) {
-            console.log("アウト");
+            console.log("ツーベース");
         }
         }else{
             if(randomA <= 3) {
             console.log("ストライク");
         }else if (randomA <= 6) {
-            console.log("アウト");
+            console.log("ボール");
         }else if (randomA <=9) {
             console.log("ストライク");
         }else{
-            console.log("ボール");
+            console.log("アウト");
         }
     }
 })
