@@ -2,13 +2,13 @@ table{
     border: solid 1px #000;
 }
 
-th{
+#course th{
     width: 150px;
     height: 150px;
     border: solid 1px #000;
 }
 
-td{
+#course td{
     width: 75px;
     border: solid 1px #000;
 }
@@ -38,4 +38,11 @@ h1{
 
 input{
     margin: 30px;
+}
+
+#counter th{
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    border: solid 1px #000;
 }
