@@ -2,8 +2,8 @@
 const highBtn = document.querySelector("#highBtn");
 const middleBtn = document.querySelector("#middleBtn");
 const lowBtn = document.querySelector("#lowBtn");
-
-
+const mySelect = document.querySelector("#mySelect")
+const opponentSelect = document.querySelector("#opponentSelect")
 
 
 // 0を高め、1を真ん中、2を低めとする
@@ -14,6 +14,8 @@ highBtn.addEventListener("click",()=>{
     let opponentRandom = Math.floor(Math.random()*3);
     let randomA = Math.floor(Math.random()*11);
     let opponentCourse = [];
+
+    mySelect.value = "高め"
 
     if (opponentRandom === 0) {
         opponentCourse = "高め"
@@ -57,12 +59,17 @@ middleBtn.addEventListener("click",()=>{
     let randomA = Math.floor(Math.random()*11);
     let opponentCourse = [];
 
+    mySelect.value = "真ん中"
+
     if (opponentRandom === 0) {
         opponentCourse = "高め"
+        opponentSelect.value = "高め"
     }else if (opponentRandom === 1) {
         opponentCourse = "真ん中"
+        opponentSelect.value = "真ん中"
     }else if (opponentRandom === 2) {
         opponentCourse = "低め"
+        opponentSelect.value = "低め"
     }else{
         alert("error");
     }
@@ -99,6 +106,8 @@ lowBtn.addEventListener("click",()=>{
     let opponentRandom = Math.floor(Math.random()*3);
     let randomA = Math.floor(Math.random()*11);
     let opponentCourse = [];
+
+    mySelect.value = "低め"
 
     if (opponentRandom === 0) {
         opponentCourse = "高め"
