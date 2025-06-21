@@ -5,7 +5,9 @@ const lowBtn = document.querySelector("#lowBtn");
 const mySelect = document.querySelector("#mySelect");
 const opponentSelect = document.querySelector("#opponentSelect");
 const strike1 = document.querySelector("#strike1");
-
+let strikeCount = 0;
+let ballCount = 0;
+let outCount = 0;
 
 // 0を高め、1を真ん中、2を低めとする
 
@@ -154,3 +156,5 @@ lowBtn.addEventListener("click",()=>{
         }
     }
 })
+
+
