@@ -2,8 +2,9 @@
 const highBtn = document.querySelector("#highBtn");
 const middleBtn = document.querySelector("#middleBtn");
 const lowBtn = document.querySelector("#lowBtn");
-const mySelect = document.querySelector("#mySelect")
-const opponentSelect = document.querySelector("#opponentSelect")
+const mySelect = document.querySelector("#mySelect");
+const opponentSelect = document.querySelector("#opponentSelect");
+const strike1 = document.querySelector("#strike1");
 
 
 // 0を高め、1を真ん中、2を低めとする
@@ -15,14 +16,20 @@ highBtn.addEventListener("click",()=>{
     let randomA = Math.floor(Math.random()*11);
     let opponentCourse = [];
 
-    mySelect.value = "高め"
+    mySelect.value = "高め";
 
     if (opponentRandom === 0) {
-        opponentCourse = "高め"
+        opponentCourse = "高め";
+        opponentSelect.value = "高め";
+
     }else if (opponentRandom === 1) {
-        opponentCourse = "真ん中"
+        opponentCourse = "真ん中";
+        opponentSelect.value = "真ん中";
+
     }else if (opponentRandom === 2) {
-        opponentCourse = "低め"
+        opponentCourse = "低め";
+        opponentSelect.value = "低め";
+
     }else{
         alert("error");
     }
@@ -59,17 +66,17 @@ middleBtn.addEventListener("click",()=>{
     let randomA = Math.floor(Math.random()*11);
     let opponentCourse = [];
 
-    mySelect.value = "真ん中"
+    mySelect.value = "真ん中";
 
     if (opponentRandom === 0) {
-        opponentCourse = "高め"
-        opponentSelect.value = "高め"
+        opponentCourse = "高め";
+        opponentSelect.value = "高め";
     }else if (opponentRandom === 1) {
-        opponentCourse = "真ん中"
-        opponentSelect.value = "真ん中"
+        opponentCourse = "真ん中";
+        opponentSelect.value = "真ん中";
     }else if (opponentRandom === 2) {
-        opponentCourse = "低め"
-        opponentSelect.value = "低め"
+        opponentCourse = "低め";
+        opponentSelect.value = "低め";
     }else{
         alert("error");
     }
@@ -107,14 +114,18 @@ lowBtn.addEventListener("click",()=>{
     let randomA = Math.floor(Math.random()*11);
     let opponentCourse = [];
 
-    mySelect.value = "低め"
+    mySelect.value = "低め";
 
     if (opponentRandom === 0) {
-        opponentCourse = "高め"
+        opponentCourse = "高め";
+        opponentSelect.value = "高め";
+
     }else if (opponentRandom === 1) {
-        opponentCourse = "真ん中"
+        opponentCourse = "真ん中";
+        opponentSelect.value = "真ん中";
     }else if (opponentRandom === 2) {
-        opponentCourse = "低め"
+        opponentCourse = "低め";
+        opponentSelect.value = "低め";
     }else{
         alert("error");
     }
