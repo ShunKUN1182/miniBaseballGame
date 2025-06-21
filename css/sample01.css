@@ -1,0 +1,14 @@
+th{
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+    border: solid 1px #000;
+}
+
+table{
+    border: solid 1px #000;
+}
+
+.foo{
+    background-color: #F00;
+}
