@@ -1,5 +1,6 @@
 table{
-    border: solid 1px #000;
+    margin: 10px;
+    margin-bottom: 30px;
 }
 
 #course th{
@@ -45,4 +46,24 @@ input{
     width: 30px;
     height: 30px;
     border: solid 1px #000;
+}
+
+#base td{
+    width: 50px;
+    height: 50px;
+}
+
+#firstBase{
+    border: solid 1px #000;
+    transform: rotate(45deg);
+}
+
+#secondBase{
+    border: solid 1px #000;
+    transform: rotate(45deg);
+}
+
+#thirdBase{
+    border: solid 1px #000;
+    transform: rotate(45deg);
 }
