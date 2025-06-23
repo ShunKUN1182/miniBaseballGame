@@ -9,6 +9,7 @@ let strikeCount = 0;
 let ballCount = 0;
 let outCount = 0;
 
+
 // 0を高め、1を真ん中、2を低めとする
 
 
@@ -38,27 +39,41 @@ highBtn.addEventListener("click",()=>{
     
     if (opponentCourse === "高め") {
         if (randomA <= 3) {
-            console.log("ボール");
-        }else if (randomA <= 6) {
-            console.log("ボール");
-        }else if (randomA <=7) {
-            console.log("ホームラン");
-        }else if (randomA <= 9) {
-            console.log("ヒット");
-        }else if (randomA <=10) {
-            console.log("アウト");
+                console.log("ボール");
+                ballCount++;
         }
-        }else{
+        else if (randomA <= 6) {
+                console.log("ボール");
+                ballCount++;
+        }
+        else if (randomA <=7) {
+                console.log("ホームラン");
+        }
+        else if (randomA <= 9) {
+                console.log("ヒット");
+        }
+        else if (randomA <=10) {
+                console.log("アウト");
+                outCount++;
+        }
+        else{
             if(randomA <= 3) {
-            console.log("ストライク");
-        }else if (randomA <= 6) {
-            console.log("アウト");
-        }else if (randomA <=9) {
-            console.log("ストライク");
-        }else{
-            console.log("ボール");
+                console.log("ストライク");
+                strikeCount++;
+            }else if (randomA <= 6) {
+                console.log("アウト");
+                outCount++;
+            }else if (randomA <=9) {
+                console.log("ストライク");
+                strikeCount++;
+            }else{
+                console.log("ボール");
+                ballCount++;
+            }
         }
     }
+        
+    console.log(ballCount);
 })
 
 
@@ -155,6 +170,7 @@ lowBtn.addEventListener("click",()=>{
             console.log("ボール");
         }
     }
+    
 })
 
 
