@@ -4,176 +4,57 @@ const middleBtn = document.querySelector("#middleBtn");
 const lowBtn = document.querySelector("#lowBtn");
 const mySelect = document.querySelector("#mySelect");
 const opponentSelect = document.querySelector("#opponentSelect");
-const strike1 = document.querySelector("#strike1");
 let strikeCount = 0;
 let ballCount = 0;
 let outCount = 0;
+let opponentCourse = [];
 
 
 // 0を高め、1を真ん中、2を低めとする
 
+function playBall(select) {
+    
+    let opponentRandom = Math.floor(Math.random()*3);
+    let randomA = Math.floor(Math.random()*11);
+
+
+    if (opponentRandom === 0) {
+        opponentCourse = "high";
+        opponentSelect.value = "高め";
+    
+    }else if (opponentRandom === 1) {
+        opponentCourse = "middle";
+        opponentSelect.value = "真ん中";
+    
+    }else if (opponentRandom === 2) {
+        opponentCourse = "bottom";
+        opponentSelect.value = "低め";
+    
+    }else{
+        alert("error");
+    }
+
+    if (select === opponentCourse) {
+        console.log("hit!!");
+    }else{
+        console.log("strike!!");
+        strikeCount + 1;
+    }
+}
 
 highBtn.addEventListener("click",()=>{
-    function playBall() {
-        
-    }
-
-    // let opponentRandom = Math.floor(Math.random()*3);
-    // let randomA = Math.floor(Math.random()*11);
-    // let opponentCourse = [];
-
-    // mySelect.value = "高め";
-
-    // if (opponentRandom === 0) {
-    //     opponentCourse = "高め";
-    //     opponentSelect.value = "高め";
-
-    // }else if (opponentRandom === 1) {
-    //     opponentCourse = "真ん中";
-    //     opponentSelect.value = "真ん中";
-
-    // }else if (opponentRandom === 2) {
-    //     opponentCourse = "低め";
-    //     opponentSelect.value = "低め";
-
-    // }else{
-    //     alert("error");
-    // }
-    
-    // if (opponentCourse === "高め") {
-    //     if (randomA <= 3) {
-    //             console.log("ボール");
-    //             ballCount++;
-    //     }
-    //     else if (randomA <= 6) {
-    //             console.log("ボール");
-    //             ballCount++;
-    //     }
-    //     else if (randomA <=7) {
-    //             console.log("ホームラン");
-    //     }
-    //     else if (randomA <= 9) {
-    //             console.log("ヒット");
-    //     }
-    //     else if (randomA <=10) {
-    //             console.log("アウト");
-    //             outCount++;
-    //     }
-    //     else{
-    //         if(randomA <= 3) {
-    //             console.log("ストライク");
-    //             strikeCount++;
-    //         }else if (randomA <= 6) {
-    //             console.log("アウト");
-    //             outCount++;
-    //         }else if (randomA <=9) {
-    //             console.log("ストライク");
-    //             strikeCount++;
-    //         }else{
-    //             console.log("ボール");
-    //             ballCount++;
-    //         }
-    //     }
-    // }
-        
-    // console.log(ballCount);
+    playBall("high");
+    mySelect.value = "高め";
 })
-
 
 middleBtn.addEventListener("click",()=>{
-
-    let opponentRandom = Math.floor(Math.random()*3);
-    let randomA = Math.floor(Math.random()*11);
-    let opponentCourse = [];
-
+    playBall("middle");
     mySelect.value = "真ん中";
-
-    if (opponentRandom === 0) {
-        opponentCourse = "高め";
-        opponentSelect.value = "高め";
-    }else if (opponentRandom === 1) {
-        opponentCourse = "真ん中";
-        opponentSelect.value = "真ん中";
-    }else if (opponentRandom === 2) {
-        opponentCourse = "低め";
-        opponentSelect.value = "低め";
-    }else{
-        alert("error");
-    }
-    
-    if (opponentCourse === "真ん中") {
-        if (randomA <= 3) {
-            console.log("ボール");
-        }else if (randomA <= 6) {
-            console.log("アウト");
-        }else if (randomA <=7) {
-            console.log("ホームラン");
-        }else if (randomA <= 9) {
-            console.log("ヒット");
-        }else if (randomA <=10) {
-            console.log("ツーベース");
-        }
-        }else{
-            if(randomA <= 3) {
-            console.log("ストライク");
-        }else if (randomA <= 6) {
-            console.log("ボール");
-        }else if (randomA <=9) {
-            console.log("ストライク");
-        }else{
-            console.log("アウト");
-        }
-    }
 })
-
-
-
+    
 lowBtn.addEventListener("click",()=>{
-
-    let opponentRandom = Math.floor(Math.random()*3);
-    let randomA = Math.floor(Math.random()*11);
-    let opponentCourse = [];
-
+    playBall("low")
     mySelect.value = "低め";
-
-    if (opponentRandom === 0) {
-        opponentCourse = "高め";
-        opponentSelect.value = "高め";
-
-    }else if (opponentRandom === 1) {
-        opponentCourse = "真ん中";
-        opponentSelect.value = "真ん中";
-    }else if (opponentRandom === 2) {
-        opponentCourse = "低め";
-        opponentSelect.value = "低め";
-    }else{
-        alert("error");
-    }
-    
-    if (opponentCourse === "低め") {
-        if (randomA <= 3) {
-            console.log("ボール");
-        }else if (randomA <= 6) {
-            console.log("ボール");
-        }else if (randomA <=7) {
-            console.log("ホームラン");
-        }else if (randomA <= 9) {
-            console.log("ヒット");
-        }else if (randomA <=10) {
-            console.log("アウト");
-        }
-        }else{
-            if(randomA <= 3) {
-            console.log("ストライク");
-        }else if (randomA <= 6) {
-            console.log("アウト");
-        }else if (randomA <=9) {
-            console.log("ストライク");
-        }else{
-            console.log("ボール");
-        }
-    }
-    
 })
 
 

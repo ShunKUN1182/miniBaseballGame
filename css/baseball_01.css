@@ -67,3 +67,15 @@ input{
     border: solid 1px #000;
     transform: rotate(45deg);
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counterBox{
+    display: flex;
+    margin: 20px;
+}
+
