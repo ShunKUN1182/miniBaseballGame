@@ -14,21 +14,88 @@ header {
 main {
     margin: 0 40px;
     display: flex;
-    .BSOcounter {
-        table {
-            width: 200px;
-            height: 150px;
-            tr {
-                width: 200px;
-                td,th {
-                    width: 25%;
-                    font-size: 15px;
+    gap: 100px;
+    justify-content: center;
+    align-items: flex-start;
+    .gameprogress {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        .BSOcounter {
+            table {
+                width: 250px;
+                height: 200px;
+                background-color: #111;
+                padding: 20px;
+                tr {
+                    width: 100%;
+                    td,th {
+                        width: 25%;
+                        font-size: 20px;
+                        color: #fff;
+                    }
+                    td {
+                        border-radius: 100%;
+                        /* border: #fff solid 1px; */
+                        background-color: grey;
+                    }
+                    .strike {
+                        background-color: #FFF000;
+                    }
+                    .ball {
+                        background-color: #01C414;
+                    }
+                    .out {
+                        background-color: #EE0000;
+                    }
                 }
-                td {
-                    border-radius: 100%;
-                    border: #000 solid 1px;
+            }
+        }
+        .runnerStatus {
+            table {
+                width: 250px;
+                height: 200px;
+                background-color: #111;
+                padding: 30px;
+                tr {
+                    width: 100%;
+                    td , th {
+                        width: calc(100%/3);
+                        height: 50%;
+                    }
+                    th {
+                        rotate: 45deg;
+                        background-color: #ccc;
+                    }
+                    .runner {
+                        background-color: #FFF000;
+                    }
                 }
             }
         }
     }
+    .batterSelect {
+        table {
+            width: 600px;
+            height: 600px;
+            border-collapse: collapse;
+            tr {
+                width: 100%;
+                td{
+                    width: calc(100%/3);
+                    height: calc(100%/3);
+                    border: 1px solid #000;
+                    &:hover{
+                        background-color: #fe6060;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }

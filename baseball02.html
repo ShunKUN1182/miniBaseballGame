@@ -13,28 +13,68 @@
     </header>
 
     <main>
-        <div class="BSOcounter">
+        <div class="gameprogress">
+            <div class="BSOcounter">
+                <table>
+                    <tr>
+                        <th>B</th>
+                        <td class="ball"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>S</th>
+                        <td class="strike"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>O</th>
+                        <td class="out"></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="runnerStatus">
+                <table>
+                    <tr>
+                        <td></td>
+                        <th class="secondBase runner"></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th class="thirdBase"></th>
+                        <td></td>
+                        <th class="firstBase runner"></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="batterSelect">
             <table>
                 <tr>
-                    <th>B</th>
                     <td></td>
                     <td></td>
                     <td></td>
                 </tr>
                 <tr>
-                    <th>S</th>
+                    <td></td>
                     <td></td>
                     <td></td>
                 </tr>
                 <tr>
-                    <th>O</th>
+                    <td></td>
                     <td></td>
                     <td></td>
                 </tr>
             </table>
         </div>
-    </main>
 
+    </main>
+    
+    <div class="result">
+        <h2>打席結果 : <span id="resultText">ライト方向への二塁打！！！</span></h2>
+    </div>
 
 
 </body>
