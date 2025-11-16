@@ -1,77 +1,80 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>野球ゲーム</title>
-    <link rel="stylesheet" href="css/baseball_01.css">
-</head>
-<body>
-    <h1>野球ゲームvol.1</h1>
-    <main>
-        <table id="course">
-            <tbody>
-                <tr>
-                    <th class="high"></th>
-                    <th class="high"></th>
-                    <th class="high"></th>
-                    <td><button type="button" id="highBtn">高め</button></td>
-                </tr>
-                <tr>
-                    <th class="middle"></th>
-                    <th class="middle"></th>
-                    <th class="middle"></th>
-                    <td><button type="button" id="middleBtn">真ん中</button></td>
-                </tr>
-                <tr>
-                    <th class="low"></th>
-                    <th class="low"></th>
-                    <th class="low"></th>
-                    <td><button type="button" id="lowBtn">低め</button></td>
-                </tr>
-            </tbody>
-        </table>
-        相手の投げたコース<input type="text" value="" id="opponentSelect" readonly>
-        あなたが選んだコース<input type="text" value="" id="mySelect" readonly>
-        結果<input type="text" value="" id="result">
-        <div class="counterBox">
-            <table id="counter">
-                <thead>
-                    <td>B</td>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                </thead>
-                <tbody>
-                    <td>S</td>
-                    <th></th>
-                    <th></th>
-                    <td></td>
-                </tbody>
-                <tfoot>
-                    <td>O</td>
-                    <th></th>
-                    <th></th>
-                    <td></td>
-                </tfoot>
-            </table>
-            <table id="base">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>野球ゲーム</title>
+        <link rel="stylesheet" href="css/baseball_01.css" />
+    </head>
+    <body>
+        <h1>野球ゲームvol.1</h1>
+        <main>
+            <table id="course">
                 <tbody>
                     <tr>
-                        <td></td>
-                        <td id="secondBase"></td>
-                        <td></td>
+                        <th class="high"></th>
+                        <th class="high"></th>
+                        <th class="high"></th>
+                        <td><button type="button" id="highBtn">高め</button></td>
                     </tr>
                     <tr>
-                        <td id="thirdBase"></td>
-                        <td></td>
-                        <td id="firstBase"></td>
+                        <th class="middle"></th>
+                        <th class="middle"></th>
+                        <th class="middle"></th>
+                        <td><button type="button" id="middleBtn">真ん中</button></td>
+                    </tr>
+                    <tr>
+                        <th class="low"></th>
+                        <th class="low"></th>
+                        <th class="low"></th>
+                        <td><button type="button" id="lowBtn">低め</button></td>
                     </tr>
                 </tbody>
             </table>
-        </div>
-    </main>
-    <script src="js/baseball_01.js"></script>
-     <!-- <script src="js/baseball.js"></script> -->
-</body>
+            相手の投げたコース<input type="text" value="" id="opponentSelect" readonly />
+            あなたが選んだコース<input type="text" value="" id="mySelect" readonly /> 結果<input
+                type="text"
+                value=""
+                id="result"
+            />
+            <div class="counterBox">
+                <table id="counter">
+                    <thead>
+                        <td>B</td>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </thead>
+                    <tbody>
+                        <td>S</td>
+                        <th></th>
+                        <th></th>
+                        <td></td>
+                    </tbody>
+                    <tfoot>
+                        <td>O</td>
+                        <th></th>
+                        <th></th>
+                        <td></td>
+                    </tfoot>
+                </table>
+                <table id="base">
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td id="secondBase"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td id="thirdBase"></td>
+                            <td></td>
+                            <td id="firstBase"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <script src="js/baseball_01.js"></script>
+        <!-- <script src="js/baseball.js"></script> -->
+    </body>
 </html>
